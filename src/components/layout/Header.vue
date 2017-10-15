@@ -11,11 +11,11 @@
                             span.container
                                 ul
                                     li
-                                        router-link.navbar-item(to='about') Sobre mi
+                                        router-link.navbar-item(to='/about') Sobre mi
                                     li
-                                        router-link.navbar-item(to='projects') Proyectos
+                                        router-link.navbar-item(to='/projects') Proyectos
                                     li
-                                        router-link.navbar-item(to='articles') Articulos
+                                        router-link.navbar-item(to='/articles') Articulos
 </template>
 
 <style lang="sass" scoped>
