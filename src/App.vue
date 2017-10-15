@@ -2,14 +2,16 @@
   #app
     dp-header
     router-view 
+    dp-footer
 </template>
 
 <script>
-import dpHeader from '@/components/layout/Header.vue'
+import dpHeader from '@/components/layout/Header'
+import dpFooter from '@/components/layout/Footer'
 
 export default {
   name: 'app',
-  components: {dpHeader},
+  components: {dpHeader, dpFooter},
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -19,9 +21,5 @@ export default {
 </script>
 
 <style lang="scss">
- @import './scss/main.scss';
-
-html{
-  background-color: rgb(47,48, 47)
-}
+  @import './scss/main.scss'; //
 </style>
