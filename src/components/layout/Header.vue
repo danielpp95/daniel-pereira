@@ -13,7 +13,7 @@
                                     li
                                         router-link.navbar-item(to='about') Sobre mi
                                     li
-                                        router-link.navbar-item(to='proyects') Proyectos
+                                        router-link.navbar-item(to='projects') Proyectos
                                     li
                                         router-link.navbar-item(to='articles') Articulos
 </template>
