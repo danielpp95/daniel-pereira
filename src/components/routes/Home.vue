@@ -11,13 +11,12 @@
 
 <style lang="sass" scoped>
 .level
-  height: 500px
-  width: 100%
+  width: 100%;
 
 .title
-  color: #fff
+  color: #fff;
 
 .subtitle
-  color: #fff
+  color: #fff;
 
 </style>
