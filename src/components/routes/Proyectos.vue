@@ -1,23 +1,42 @@
 <template lang="pug">
-  .level
-    .level-item
-      div
-        p.title.is-1 @Danielpp95
-        br
-        p.subtitle.is-3 > Full Stack Developer
-        br
-        a.button.is-success.is-outlined.is-large Hire me 🎯
+  div
+    //Selector
+    nav.level
+
+      p.level-item.has-text-centered
+        button.button.is-dark( @click="selectType(true)" ) Personales
+
+      p.level-item.has-text-centered
+        button.button.is-dark( @click="selectType(false)" )  Empresariales
+
+
+    // Personal View
+    personales(v-show="is_personal" )
+    // Empresarial View
+    empresariales(v-show="!is_personal" )
+
 </template>
+
+<script>
+import personales from '@/components/layout/Proyectos-personales'
+import empresariales from '@/components/layout/Proyectos-empresariales'
+
+export default {
+  data () {
+    return {
+      is_personal: true
+    }
+  },
+  components: { personales, empresariales },
+  methods: {
+    selectType (type) {
+      this.is_personal = type
+    }
+  }
+}
+</script>
 
 <style lang="sass" scoped>
 .level
-  height: 500px
-  width: 100%
-
-.title
-  color: #fff
-
-.subtitle
-  color: #fff
-
+  margin-top: 15px;
 </style>

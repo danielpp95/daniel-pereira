@@ -10,11 +10,10 @@
 <script>
 import dpHeader from '@/components/layout/Header'
 import dpFooter from '@/components/layout/Footer'
-import dpProyectos from '@/components/layout/Proyectos'
 
 export default {
   name: 'app',
-  components: { dpHeader, dpFooter, dpProyectos }
+  components: { dpHeader, dpFooter }
 }
 </script>
 
