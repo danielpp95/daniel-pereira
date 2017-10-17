@@ -1,5 +1,9 @@
 <template lang="pug">
-  p.title Proyectos Empresariales
+  nav.level
+    .level-item.has-text-centered
+      div
+        p.heading Proyectos empresariales
+        p.title coming soon
 </template>
 
 <style lang="scss" scoped>

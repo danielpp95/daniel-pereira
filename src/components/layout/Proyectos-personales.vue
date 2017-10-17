@@ -1,9 +1,24 @@
 <template lang="pug">
-  p.title Proyectos Personales
+.columns
+  app
+  br
+  br
 </template>
 
-<style lang="scss" scoped>
-p{
-  color: white;}
+<script>
+import app from '@/components/layout/Proyecto'
+
+export default{
+  components: { app }
+}
+</script>
+
+
+<style>
+app{
+
+}
 </style>
+
+
 

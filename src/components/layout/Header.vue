@@ -16,6 +16,8 @@
                                         router-link.navbar-item(to='/projects') Proyectos
                                     li
                                         router-link.navbar-item(to='/articles') Articulos
+                                    li
+                                        router-link.navbar-item(to='/certifications') Certificaciones
 </template>
 
 <style lang="sass" scoped>
