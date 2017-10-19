@@ -14,7 +14,7 @@
             | {{ a.alcance }}
 
         .level-item
-          a.button.is-link.is-medium(:href="a.link") Link
+          a.button.is-link.is-medium( target="_blank" :href="a.link" ) Link
       br
     
     
