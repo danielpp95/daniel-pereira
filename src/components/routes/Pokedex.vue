@@ -12,7 +12,7 @@ div.contenedor
       p Hasta
       input.input(type="number" placeholder="Hasta" v-model="hasta")
   
-  button.button( @click="pokemonFetch" ) Buscar Pokemon! 👾
+  button.button( @click="pokemonFetch" ) Buscar Pokemon! <span class="ec ec-space-invader"></span>
 
   ul#lista-pokemon
     li.pokemon(v-for="pokemon in sortedArray" :key="pokemon.id")
@@ -100,6 +100,10 @@ img{
   text-align: center;
   /* height: 500px; */
   animation: .3s pokemon;
+}
+
+.ec {
+  margin-left: 5px;
 }
 
 @keyframes pokemon {
