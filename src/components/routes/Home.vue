@@ -6,7 +6,8 @@
         br
         p.subtitle.is-3 > Full Stack Developer
         br
-        a.button.is-success.is-outlined.is-large Hire me 🎯
+        a.button.is-success.is-outlined.is-large Hire me 
+          |<span class="ec ec-dart"></span>
 </template>
 
 <style lang="sass" scoped>
@@ -18,5 +19,7 @@
 
 .subtitle
   color: #fff;
+span
+  margin-left: 5px;
 
 </style>

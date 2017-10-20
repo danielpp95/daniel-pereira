@@ -1,5 +1,6 @@
 <template lang="pug">
   .has-text-centered
+    br
     h1.title Titulos y certicicaciones
 
     div.certificado(v-for="c in certificados")
