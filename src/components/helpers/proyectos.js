@@ -20,6 +20,17 @@ const articulos = [
       { tool: 'webpack-simple', url: `https://github.com/vuejs-templates/webpack-simple` }
     ],
     id: 2
+  },
+  {
+    img: require('@/assets/www.png'),
+    title: 'daniel-pereira.me',
+    status: 'Active',
+    git: 'https://github.com/danielpp95/daniel-pereira.me',
+    demo: '/',
+    tools: [
+      { tool: 'webpack-simple', url: `https://github.com/vuejs-templates/webpack-simple` }
+    ],
+    id: 3
   }
 ]
 

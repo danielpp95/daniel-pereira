@@ -22,7 +22,7 @@
               br
               br
               router-link.button.is-link.is-medium.is-pulled-right(:to="p.demo" v-if="p.demo") Demo Page
-              a.is-pulled-right
+              a.is-pulled-right(:href="p.git" target="_blank" v-if="p.git")
                 img.image.is-48x48.git(:src="git_img")
 
   nav.level
