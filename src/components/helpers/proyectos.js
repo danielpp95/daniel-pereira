@@ -28,12 +28,8 @@ const articulos = [
     git: 'https://github.com/danielpp95/daniel-pereira.me',
     demo: '/',
     tools: [
-<<<<<<< HEAD
-      { tool: 'webpack-simple', url: `https://github.com/vuejs-templates/webpack-simple` }
-=======
       { tool: 'webpack-simple', url: `https://github.com/vuejs-templates/webpack-simple` },
       { tool: 'Gitgub Pages', url: `https://pages.github.com/` }
->>>>>>> projects
     ],
     id: 3
   }
