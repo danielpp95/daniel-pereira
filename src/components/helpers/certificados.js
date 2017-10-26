@@ -52,6 +52,12 @@ const certificados = [
     img: require('@/assets/certificados/deploy-now.png'),
     categoria: 'Administración de Servidores y DevOps',
     id: 9
+  },
+  {
+    nombre: 'Fundamentos de JavaScript',
+    img: require('@/assets/certificados/js.png'),
+    categoria: 'Desarrollador JavaScript',
+    id: 10
   }
 ]
 
