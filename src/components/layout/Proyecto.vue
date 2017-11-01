@@ -30,6 +30,7 @@
       div
         p.heading Y mas proximamente
         p.title Uploading...
+  br
 </template>
 
 <script>

@@ -28,8 +28,20 @@ const articulos = [
     git: 'https://github.com/danielpp95/daniel-pereira.me',
     demo: '/',
     tools: [
-      { tool: 'webpack-simple', url: `https://github.com/vuejs-templates/webpack-simple` },
-      { tool: 'Gitgub Pages', url: `https://pages.github.com/` }
+      { tool: 'webpack-simple', url: `https://github.com/danielpp95/webpack-simple` },
+      { tool: 'Gitgub Pages', url: `https://pages.github.com/` },
+      { tool: 'Bulma.io', url: `https://bulma.io/` }
+    ],
+    id: 3
+  },
+  {
+    img: require('@/assets/ruta-platzi.png'),
+    title: 'Ruta de aprendizaje en Platzi',
+    status: 'Active',
+    git: 'https://github.com/danielpp95/ruta-platzi',
+    demo: '/ruta-platzi',
+    tools: [
+      { tool: 'webpack-simple', url: `https://github.com/danielpp95/webpack-simple` }
     ],
     id: 3
   }

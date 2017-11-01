@@ -5,6 +5,7 @@ import Pokedex from '@/components/routes/Pokedex'
 import Certifications from '@/components/routes/Certifications'
 import About from '@/components/routes/About'
 import Articles from '@/components/routes/Articles'
+import RutaPlatzi from '@/components/routes/Platzi_ruta'
 
 const routes = [
   { path: '/', component: Home, name: 'home' },
@@ -13,6 +14,7 @@ const routes = [
   { path: '/certifications', component: Certifications, name: 'certifications' },
   { path: '/about', component: About, name: 'about' },
   { path: '/articles', component: Articles, name: 'articles' },
+  { path: '/ruta-platzi', component: RutaPlatzi, name: 'platzi_ruta' },
   { path: '*', component: PageNotFound, name: '404' }
 ]
 
