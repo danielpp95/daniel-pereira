@@ -37,8 +37,7 @@
 
     div#canvas
       img#ruta(width='1080', height='1080', :src='img', alt='Ruta', hidden='')
-      .level
-        canvas#myCanvas.level-item(width='900', height='1040', style='border:1px solid #d3d3d3;')
+      canvas#myCanvas.level(width='900', height='1040', style='border:1px solid #d3d3d3;')
           | Your browser does not support the HTML5 canvas tag.
     div#images
       img(id='basico' width='180', height='180' :src='cursoBasico' hidden)
