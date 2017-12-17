@@ -81,7 +81,17 @@ export default {
       for (var b = 0; b < badges.length; b++) {
         var element = badges[b]
         const bg = document.getElementById(element.value)
+        ctx.font = '15px Arial'
+        ctx.textAlign = 'center'
         ctx.drawImage(bg, element.x, element.y)
+        // ctx.fillText(cursos[b], (element.x + 80), (element.y + 180))
+
+        for (var i = 0; i < this.insignias.length; i++) {
+          if (this.insignias[i].id === this.cursos[b]) {
+            var elemento = this.insignias[i].curso
+            ctx.fillText(elemento, (element.x + 80), (element.y + 180))
+          }
+        }
 
         if (isrendering) {
           ctx.font = 'bold 30px Arial'

@@ -58,6 +58,18 @@ const certificados = [
     img: require('@/assets/certificados/js.png'),
     categoria: 'Desarrollador JavaScript',
     id: 10
+  },
+  {
+    nombre: 'Curso de Webpack',
+    img: require('@/assets/certificados/webpack.png'),
+    categoria: 'Desarrollador JavaScript',
+    id: 11
+  },
+  {
+    nombre: 'Curso de Bitcoin y Blockchain',
+    img: require('@/assets/certificados/bitcoin.png'),
+    categoria: 'Negocios Online',
+    id: 12
   }
 ]
 
