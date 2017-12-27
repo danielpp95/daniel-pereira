@@ -91,8 +91,16 @@ export default {
         // Insignia
         for (var i = 0; i < this.insignias.length; i++) {
           if (this.insignias[i].id === this.cursos[b]) {
+            /// ///////
             var elemento = this.insignias[i].curso
-            ctx.fillText(elemento, (element.x + 80), (element.y + 180))
+            // ctx.fillText(elemento, (element.x + 80), (element.y + 180))
+            /// //////
+            var lines = elemento.split('\n')
+            var lineheight = 15
+            for (var z = 0; z < lines.length; z++) {
+              ctx.fillText(lines[z], (element.x + 80), (element.y + 180) + (z * lineheight))
+            }
+            /// //////
             break
           }
         }
