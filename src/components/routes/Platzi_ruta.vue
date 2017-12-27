@@ -40,13 +40,13 @@
       canvas#myCanvas.level(width='900', height='1040', style='border:1px solid #d3d3d3;')
           | Your browser does not support the HTML5 canvas tag.
     div#images
-      img(id='basico' width='180', height='180' :src='cursoBasico' hidden)
-      img(id='gusta' width='180', height='180' :src='cursoGusto' hidden)
-      img(id='complemento' width='180', height='180' :src='complemento' hidden)
-      img(id='tecnologia' width='180', height='180' :src='tecnologia' hidden)
-      img(id='profesional' width='180', height='180' :src='profesional' hidden)
-      img(id='especializate' width='180', height='180' :src='especializate' hidden)
-      img(id='profundiza' width='180', height='180' :src='profundiza' hidden)
+      img(id='basico' width='180', height='180' :src='cursoBasico' hidden )
+      img(id='gusta' width='180', height='180' :src='cursoGusto' hidden )
+      img(id='complemento' width='180', height='180' :src='complemento' hidden )
+      img(id='tecnologia' width='180', height='180' :src='tecnologia' hidden )
+      img(id='profesional' width='180', height='180' :src='profesional' hidden )
+      img(id='especializate' width='180', height='180' :src='especializate' hidden )
+      img(id='profundiza' width='180', height='180' :src='profundiza' hidden )
     br
     br
 </template>
@@ -70,6 +70,7 @@ export default {
   },
   methods: {
     canvas: function () {
+      console.log(this.cursos)
       var isrendering = true
       const nombre = this.nombre
       var canvas = document.getElementById('myCanvas')
@@ -78,6 +79,7 @@ export default {
       var img = document.getElementById('ruta')
       ctx.drawImage(img, 0, 0)
 
+      // Nivel de insignia
       for (var b = 0; b < badges.length; b++) {
         var element = badges[b]
         const bg = document.getElementById(element.value)
@@ -86,13 +88,16 @@ export default {
         ctx.drawImage(bg, element.x, element.y)
         // ctx.fillText(cursos[b], (element.x + 80), (element.y + 180))
 
+        // Insignia
         for (var i = 0; i < this.insignias.length; i++) {
           if (this.insignias[i].id === this.cursos[b]) {
             var elemento = this.insignias[i].curso
             ctx.fillText(elemento, (element.x + 80), (element.y + 180))
+            break
           }
         }
 
+        // Nombre
         if (isrendering) {
           ctx.font = 'bold 30px Arial'
           ctx.textAlign = 'center'

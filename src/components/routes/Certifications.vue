@@ -14,7 +14,6 @@
 
 <script>
 import certificaciones from '@/components/helpers/certificados'
-console.log(certificaciones)
 export default{
   data () {
     return {
