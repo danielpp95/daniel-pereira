@@ -21,7 +21,12 @@
             .column
               br
               br
-              router-link.button.is-link.is-medium.is-pulled-right(:to="p.demo" v-if="p.demo") Demo Page
+              //- sitios dentro de la pagina
+              div(v-if="p.onSite==true")
+                router-link.button.is-link.is-medium.is-pulled-right(:to="p.demo" v-if="p.demo") Demo Page
+              //- sitios en otras paginas
+              div(v-if="p.onSite==false")
+                a.button.is-link.is-medium.is-pulled-right(:href="p.demo" _blank v-if="p.demo") Demo Page
               a.is-pulled-right(:href="p.git" target="_blank" v-if="p.git")
                 img.image.is-48x48.git(:src="git_img")
 
