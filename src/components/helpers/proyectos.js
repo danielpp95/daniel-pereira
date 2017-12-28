@@ -51,7 +51,7 @@ const articulos = [
   },
   {
     img: 'https://raw.githubusercontent.com/danielpp95/platzi-video/master/images/logo.png',
-    title: 'Ruta de aprendizaje en Platzi',
+    title: 'Platzi Video',
     status: 'Active',
     git: 'https://github.com/danielpp95/platzi-video',
     onSite: false,
